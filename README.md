@@ -1,8 +1,10 @@
+<p align="center"><img src="images/icon.png" width="128" alt="Edge icon"></p>
+
 # Edge
 
-**Tick-by-tick replay for MNQ and MES futures: practise a prop-firm evaluation until you pass or blow it.**
+**Tick-by-tick replay for MNQ and MES futures: practise a prop-firm evaluation until you pass or blow it, in a chart that works like TradingView.**
 
-![Edge: MNQ replay with a position, its take-profit and stop-loss on the chart, and the trailing MLL](images/theme-edge.png)
+![Edge: a 5-minute MNQ replay with a projected sell limit, its TP / SL, a long position tool and the 10AM line](images/edge-dark-heat.png)
 
 **[Download for macOS](https://github.com/unpaidfunds/edge/releases/latest/download/Edge-mac.zip)** ·
 **[Download for Windows](https://github.com/unpaidfunds/edge/releases/latest/download/Edge-windows-x64.zip)** ·
@@ -13,40 +15,41 @@
 ## Features
 
 - **Tick-by-tick replay** of MNQ and MES: every candle forms print by print, so you watch the wicks being made while you trade.
-- **Speed 1× to 60×**: play, pause, step one tick, jump to the next candle.
-- **Skip to the next day 09:00**: done for the day? Jump straight to the next session. Orders, brackets and the drawdown
-  still run through every skipped tick.
-- **Prop-firm evaluations** for 25K, 50K and 100K accounts (or custom): a **trailing intraday max loss limit (MLL)** and a
-  **pass target**, checked on every tick, with a clear **PASSED** or **BLOWN** result.
-- **Order ticket**: market, limit and stop orders with take-profit and stop-loss, quantity and live dollar values.
-- **TradingView-style chart**: free panning and zoom, independent price and time axes, order lines you drag to move,
-  and TP / SL you drag straight onto the chart.
-- **Drawing tools**: rejection block (with its 50 % line) and OTE fib, saved per instrument.
-- **Timeframes** 1M · 5M · 15M · 30M · 1H · 4H, all forming tick by tick.
-- **4 themes**: Edge, Amber Terminal, Cold Grid and Mono Signal.
+- **Backtest a timespan**: 1 day, 1 week, 2 weeks, 1 month or any custom range, picked on a calendar. The replay runs day after day until the span ends.
+- **Speed 1× to 60×**: play, pause, step one tick, jump to the next candle, or **skip to the next day 09:00**. Orders, brackets and the drawdown still run through every skipped tick.
+- **Prop-firm evaluations** for 25K, 50K and 100K accounts (or custom): a **trailing intraday max loss limit (MLL)** and a **pass target**, checked on every tick, with a clear **Passed** or **Blown** result.
+- **TradingView-style order panel**: Sell | Buy, Market · Limit · Stop · Stop Limit, units or **USD risk**, take profit and stop loss in price or ticks, risk / reward.
+- **Projected order on the chart**, just like TradingView: drag it and its TP / SL into place, then click its Buy / Sell pill to send it. Every order, TP and SL is a line you can drag, with × to cancel.
+- **Drawing tools**: long and short **position tools** (risk / reward, one click to place the trade), rejection block, OTE fib, the **10AM line** and a horizontal ray. Hold **⌘** to snap to the candle.
+- **Timeframes** 1m · 5m · 15m · 30m · 1h · 4h, all forming tick by tick. Free panning in every direction, scroll to zoom time, independent price and time scales.
+- **Dark or Cream, Mono or Heat**: four colour schemes. On macOS the Dock icon follows the palette.
+- **Account manager**: balance, equity, P&L, the MLL and the target, positions, orders, history and stats.
 - **Free data**: Yahoo Finance 1-minute bars, cached on your computer, plus **CSV import** of your own bars or real ticks
   (TradingView, Databento, NinjaTrader and generic formats).
 - Runs **fully offline** once data is cached. No account, no keys, nothing to pay.
 
 ## Screenshots
 
-| Edge | Amber Terminal |
+| Dark · Heat | Dark · Mono |
 |---|---|
-| ![Edge theme](images/theme-edge.png) | ![Amber Terminal theme](images/theme-amber-terminal.png) |
-| **Cold Grid** | **Mono Signal** |
-| ![Cold Grid theme](images/theme-cold-grid.png) | ![Mono Signal theme](images/theme-mono-signal.png) |
+| ![Dark Heat](images/edge-dark-heat.png) | ![Dark Mono](images/edge-dark-mono.png) |
+| **Cream · Heat** | **Cream · Mono** |
+| ![Cream Heat](images/edge-light-heat.png) | ![Cream Mono](images/edge-light-mono.png) |
 
-**New evaluation:** account size, MLL, pass target, instrument, session, start time, timeframe, speed and theme.
+**New backtest:** market, timespan on a calendar, account rules and replay settings.
 
-![Setup dialog](images/setup.png)
+![New backtest](images/setup.png)
 
-**Order ticket:** market, limit and stop with take-profit and stop-loss, every order as a line on the chart.
+**Drawing tools:** position tools with risk / reward and a button to place the trade, the 10AM line, rays, rejection block and OTE.
 
-![Order ticket with working orders and their TP / SL lines](images/order-ticket.png)
+![Position tools, 10AM line and orders on the chart](images/drawing-tools.png)
 
-**Drawings:** rejection block and OTE fib.
+<img src="images/order-panel.png" width="360" align="right" alt="Order panel">
 
-![Rejection block and OTE fib on the chart](images/drawings.png)
+**Order panel:** the TradingView order panel. Pick a side, an order type, the size in contracts or USD risk, and the exits.
+The chart shows the order before you send it.
+
+<br clear="right">
 
 **The result:** blown or passed. Restart replays exactly the same ticks.
 
@@ -58,7 +61,7 @@
 
 | | File | Runs on |
 |---|---|---|
-| macOS | `Edge-mac.zip` | macOS 11 or later |
+| macOS | `Edge-mac.zip` | macOS 11 or later, Apple Silicon |
 | Windows | `Edge-windows-x64.zip` | Windows 10 / 11, 64-bit |
 
 **macOS**
