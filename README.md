@@ -16,7 +16,7 @@
 
 - **Tick-by-tick replay** of MNQ and MES: every candle forms print by print, so you watch the wicks being made while you trade.
 - **Backtest a timespan**: 1 day, 1 week, 2 weeks, 1 month or any range: pick or drag any two dates on the calendar (drag a circle to move just that end), drag the handles on the timeline of your cached sessions, or nudge it with ← →. The replay runs day after day until the span ends.
-- **Speed 1× to 60×**: play, pause, step one tick, jump to the next candle, or **skip to the next day 09:00**. Toggle a **playhead** line at the replay's current time. Orders, brackets and the drawdown still run through every skipped tick.
+- **Speed 1× to 60×**: play, pause, step one tick, jump to the next candle, or **skip to the next day 09:00**. Toggle a **playhead** line at the replay's current time, and drag it along the bars, into the future too. Orders, brackets and the drawdown still run through every skipped tick.
 - **Prop-firm evaluations** for 25K, 50K and 100K accounts (or custom): a **trailing intraday max loss limit (MLL)** and a **pass target**, checked on every tick, with a clear **Passed** or **Blown** result.
 - **TradingView-style order panel**: Sell | Buy, Market · Limit · Stop · Stop Limit, units or **USD risk**, take profit and stop loss in price or ticks, risk / reward.
 - **Projected order on the chart**, just like TradingView: drag it and its TP / SL into place, then click its Buy / Sell pill to send it. Every order, TP and SL is a line you can drag, with × to cancel.
